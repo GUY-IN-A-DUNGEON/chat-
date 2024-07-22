@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Protected Chat</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="password-form" class="form-container">
+        <h2>Please enter the password to access the chat:</h2>
+        <input type="password" id="password" class="input-field" placeholder="Password">
+        <button onclick="checkPassword()" class="btn">Submit</button>
+        <p id="password-message" class="message"></p>
+    </div>
+
+    <div id="create-room-form" class="form-container">
+        <h2>Create Your Own Chat Room</h2>
+        <button onclick="generateChatCode()" class="btn">Create Room</button>
+        <p id="chat-code" class="message"></p>
+    </div>
+
+    <div id="chat-room" class="chat-container">
+        <h1>Chat Room</h1>
+        <p>Chat code: <span id="chat-code-display"></span></p>
+        <!-- Add your chat interface here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
